@@ -1,15 +1,20 @@
 {
 	"name": "@promonkeyli/pro-cli",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "frontend tools",
 	"main": "index.js",
 	"type": "module",
 	"scripts": {
-		"plop": "plop"
+		"schematics": "schematics"
 	},
 	"bin": {
 		"pro": "index.js"
 	},
 	"author": "promonkeyli",
-	"license": "ISC"
+	"license": "ISC",
+	"dependencies": {
+		"@angular-devkit/core": "^17.3.7",
+		"@angular-devkit/schematics": "^17.3.7",
+		"@promonkeyli/react-schematics": "1.0.0"
+	}
 }

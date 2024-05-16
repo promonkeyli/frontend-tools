@@ -1,0 +1,8 @@
+{
+	"name": "@promonkeyli/common",
+	"version": "1.0.0",
+	"description": "common lib",
+	"type": "module",
+	"author": "promonkeyli",
+	"license": "ISC"
+}
