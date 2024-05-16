@@ -1,0 +1,20 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"$id": "SchematicsReactPage",
+	"title": "React Page Options Schema",
+	"type": "object",
+	"description": "生成React页面模板文件",
+	"additionalProperties": false,
+	"properties": {
+		"name": {
+			"type": "string",
+			"description": "页面名称",
+			"$default": {
+				"$source": "argv",
+				"index": 0
+			},
+			"x-prompt": "请输入你需要创建的页面名称"
+		}
+	},
+	"required": ["name"]
+}

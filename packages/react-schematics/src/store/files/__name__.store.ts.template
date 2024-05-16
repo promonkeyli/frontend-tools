@@ -1,0 +1,21 @@
+/**
+ * React Zustand Store Docs: https://docs.pmnd.rs/zustand/recipes/recipes
+ * @description 此处注明该store的作用
+ * @author 作者声明
+ * @Date: 此处填写创建时间
+ */
+
+import { create } from "zustand";
+
+interface <%= classify(name) %>StateStore {
+    state: any
+    setState: (newState: any) => void;
+    getState: () => any
+}
+const use<%= classify(name) %>StateStore = create<Partial<<%= classify(name) %>StateStore>>((set, get) => ({
+    state: "", // state初始状态声明
+    setState: (newState: any) => set(() => ({state: newState})),
+    getState: () => get
+}));
+
+export { use<%= classify(name) %>StateStore };

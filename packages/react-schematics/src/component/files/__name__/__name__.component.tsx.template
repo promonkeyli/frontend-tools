@@ -1,0 +1,17 @@
+import { use<%= classify(name) %>Store } from "./<%= name %>.store";
+import style from "./<%= name %>.module.less";
+import {<%= classify(name) %>ComponentProps} from "./<%= name %>.interface";
+
+function <%= classify(name) %>Component(props?: <%= classify(name) %>ComponentProps) {
+    const { state, action } = use<%= classify(name) %>Store()
+    const { loading } = state;
+    const { handleChange } = action;
+
+    return (
+        <div className={style.<%= classify(name) %>Box} >
+            This is <%= classify(name) %>Component
+        </div>
+    )
+}
+
+export default <%= classify(name) %>Component

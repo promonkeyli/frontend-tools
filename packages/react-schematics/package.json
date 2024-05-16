@@ -1,0 +1,13 @@
+{
+	"name": "@promonkeyli/react-schematics",
+	"version": "1.0.0",
+	"description": "a react schematics",
+	"scripts": {
+		"build": "tsc -p tsconfig.json",
+		"test": "npm run build && jasmine src/**/*_spec.js"
+	},
+	"keywords": ["schematics", "react schematics"],
+	"author": "promonkeyli",
+	"license": "MIT",
+	"schematics": "./src/collection.json"
+}

@@ -1,0 +1,11 @@
+/* <%= classify(name) %>Store 类中定义组件的初始状态 */
+export class <%= classify(name) %>Store {
+    loading = false
+}
+export interface <%= classify(name) %>ComponentProps {
+    value?: any;
+    onChange?: (v?: any) => void;
+}
+export interface <%= classify(name) %>Action {
+    handleChange?: (v?: any) => void;
+}

@@ -11,8 +11,5 @@
 		"pro": "index.js"
 	},
 	"author": "promonkeyli",
-	"license": "ISC",
-	"devDependencies": {
-		"plop": "^4.0.1"
-	}
+	"license": "ISC"
 }

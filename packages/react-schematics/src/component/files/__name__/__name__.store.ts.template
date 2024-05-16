@@ -1,0 +1,22 @@
+import { <%= classify(name) %>Action, <%= classify(name) %>Store } from "./<%= name %>.interface";
+import { useStateStore } from "@/utils/hooks/useStateStore";
+
+function use<%= classify(name) %>Store() {
+    const { state, setStateWrap } = useStateStore(new <%= classify(name) %>Store());
+
+    const handleChange = (v: any) => {
+        console.log(v);
+    }
+
+    const action: <%= classify(name) %>Action = {
+        handleChange
+    }
+
+    return {
+        state,
+        setStateWrap,
+        action,
+    }
+}
+
+export { use<%= classify(name) %>Store }
