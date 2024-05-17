@@ -1,6 +1,6 @@
 {
 	"name": "@promonkeyli/pro-cli",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "frontend tools",
 	"main": "schematics.js",
 	"type": "module",
