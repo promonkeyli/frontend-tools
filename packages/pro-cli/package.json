@@ -1,6 +1,6 @@
 {
 	"name": "@promonkeyli/pro-cli",
-	"version": "1.0.7",
+	"version": "1.0.9",
 	"description": "frontend tools",
 	"main": "index.js",
 	"type": "module",

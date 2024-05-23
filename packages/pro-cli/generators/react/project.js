@@ -38,10 +38,10 @@ function getRepoTemplate(name) {
 		//3、 拷贝完毕后删除clone的目录
 		try {
 			fs.rmSync(`${localPath}-temp`, { recursive: true, force: true });
-			console.log("Folder and its contents deleted successfully!");
 		} catch (err) {
 			console.error("Error deleting folder:", err);
 		}
+		console.log("项目创建成功！");
 	});
 }
 
