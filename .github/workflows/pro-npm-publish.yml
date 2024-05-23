@@ -11,12 +11,14 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./packages/pro-cli
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: cd "packages" && cd "pro-cli"
       - run: npm ci
 
 #  publish-npm:
