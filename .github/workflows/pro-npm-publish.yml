@@ -6,7 +6,7 @@ name: pro-cli pkg publish
 on:
  push:
   branches:
-  - pro-cli
+   - pro-cli
 
 jobs:
   build:
