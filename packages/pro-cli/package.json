@@ -1,15 +1,16 @@
 {
 	"name": "@promonkeyli/pro-cli",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "frontend tools",
 	"main": "index.js",
 	"type": "module",
-	"scripts": {
-		"plop": "plop"
-	},
 	"bin": {
 		"pro": "index.js"
 	},
 	"author": "promonkeyli",
-	"license": "ISC"
+	"license": "ISC",
+	"devDependencies": {
+		"minimist": "^1.2.8",
+		"plop": "^4.0.1"
+	}
 }

@@ -45,7 +45,12 @@ importers:
     specifiers: {}
 
   packages/pro-cli:
-    specifiers: {}
+    specifiers:
+      minimist: ^1.2.8
+      plop: ^4.0.1
+    devDependencies:
+      minimist: 1.2.8
+      plop: 4.0.1
 
   packages/react-schematics:
     specifiers: {}
