@@ -6,6 +6,7 @@
       "always",
       ["ci","feat", "fix", "docs", "style", "refactor", "test", "chore", "revert"]
     ],
-    "scope-case": [2, "always", "lower-case"]
+    "scope-enum": [1, "always", ["common","pro-cli","react-schematics" ]],
+    "scope-empty": [1, "never"]
   }
 }
