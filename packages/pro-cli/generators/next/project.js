@@ -1,8 +1,8 @@
-// react project generator
+// next project generator
 import { TemplateEnum, getRepoTemplate } from "../../utils/index.js";
 
-export const reactProjectGenerator = {
-	description: "react项目模板代码生成",
+export const nextProjectGenerator = {
+	description: "next项目模板代码生成",
 	prompts: [
 		{
 			type: "input",
@@ -11,7 +11,7 @@ export const reactProjectGenerator = {
 		},
 	],
 	actions: (data) => {
-		getRepoTemplate(TemplateEnum.reactWebTpl, data.name); // 模板克隆
+		getRepoTemplate(TemplateEnum.nextWebTpl, data.name); // 模板克隆
 		return [];
 	},
 };
