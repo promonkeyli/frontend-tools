@@ -3,9 +3,11 @@
 	"version": "1.0.0",
 	"description": "frontend tools library",
 	"private": true,
+	"type": "module",
 	"scripts": {
 		"prepare": "husky",
 		"lint": "biome lint packages",
+		"commit:pro": "node scripts/pro-ci.js && git add . && git cz",
 		"commit": "git add . && git cz"
 	},
 	"repository": {
