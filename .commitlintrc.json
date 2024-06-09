@@ -1,12 +1,5 @@
 {
   "extends": ["@commitlint/config-conventional"],
   "rules": {
-    "type-enum": [
-      2,
-      "always",
-      ["ci","feat", "fix", "docs", "style", "refactor", "test", "chore", "revert"]
-    ],
-    "scope-enum": [1, "always", ["common","pro-cli","react-schematics" ]],
-    "scope-empty": [1, "never"]
-  }
+    "scope-enum": [1, "always", ["common","pro-cli","react-schematics", "frontend-tools config" ]]}
 }
